@@ -412,6 +412,7 @@ body {
   padding-top: 110px;
   padding-bottom: 180px;
   background-color: #f4f7fa;
+  z-index: -1;
 }
 .main .main__testimonials__container .testimonials-title {
   text-align: center;
@@ -717,4 +718,4 @@ body {
   .header .log {
     width: 50%;
   }
-}/*# sourceMappingURL=second.css.map */
+}/*# sourceMappingURL=about-us.css.map */
