@@ -17,7 +17,6 @@ body {
   display: flex;
   align-items: center;
   background: white;
-  color: transparent;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -140,6 +139,7 @@ body {
   color: #fff;
   border-radius: 30px;
   padding: 10px 25px;
+  transition: 0.8s;
 }
 .header__container__row__btns__buttons .sign-up:hover {
   background: #fd7e14;

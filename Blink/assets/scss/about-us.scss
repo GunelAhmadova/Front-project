@@ -19,7 +19,6 @@ body {
     display: flex;
     align-items: center;
     background: white;
-    color: transparent;
     position: sticky;
     top: 0;
 
@@ -170,6 +169,7 @@ body {
         color: #fff;
         border-radius: 30px;
         padding: 10px 25px;
+        transition: 0.8s;
 
         &:hover {
             background: #fd7e14;
@@ -892,7 +892,7 @@ body {
 
 
 
-//MEDIAAAA SCREEEEENN!!!!!! SECONDDDD CSSSS
+//MEDIAAAA SCREEEEENN!!!!!! 
 
 @media screen and (max-width: 992px) {
     .header {
