@@ -23,6 +23,7 @@ html {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 .header__container {
   position: relative;
@@ -285,6 +286,11 @@ html {
   border-radius: 12px;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .main__contact-us__container__row .contact-form .form {
+    padding: 35px;
+  }
+}
 .main__contact-us__container__row .contact-form .form .group-form label {
   font-size: 15px;
   font-weight: 500;
@@ -342,6 +348,12 @@ html {
   padding-left: 60px;
   padding-right: 80px;
 }
+@media screen and (max-width: 768px) {
+  .main__contact-us__container__row .content {
+    padding: 0;
+    margin-top: 40px;
+  }
+}
 .main__contact-us__container__row .content .title h2 {
   font-size: 28px;
   font-weight: 700;
@@ -372,6 +384,14 @@ html {
   background: white;
   padding: 110px 0;
 }
+@media screen and (max-width: 567px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .footer-logo {
+    margin: 0 auto;
+  }
+}
 
 .footer__container__content__row .footer-col1 .footer-about .footer-logo {
   width: 110px;
@@ -390,10 +410,9 @@ html {
   display: block;
   margin-bottom: 35px;
   color: #151515;
-  padding-left: 25px;
 }
 .footer__container__content__row .footer-col2 .content ul {
-  padding-right: 50px;
+  padding: 0;
 }
 .footer__container__content__row .footer-col2 .content ul li {
   display: block;

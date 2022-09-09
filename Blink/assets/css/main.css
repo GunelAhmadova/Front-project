@@ -1041,6 +1041,14 @@ body {
   background: white;
   padding: 110px 0;
 }
+@media screen and (max-width: 567px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .footer-logo {
+    margin: 0 auto;
+  }
+}
 
 .footer__container__content__row .footer-col1 .footer-about .footer-logo {
   width: 110px;
@@ -1059,6 +1067,9 @@ body {
   display: block;
   margin-bottom: 35px;
   color: #151515;
+}
+.footer__container__content__row .footer-col2 .content ul {
+  padding: 0;
 }
 .footer__container__content__row .footer-col2 .content ul li {
   display: block;

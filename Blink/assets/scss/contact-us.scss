@@ -24,6 +24,7 @@ html {
     color: transparent;
     position: sticky;
     top: 0;
+    z-index: 99;
 
     &__container {
         position: relative;
@@ -379,6 +380,10 @@ html {
                         border-radius: 12px;
                         background-color: #fff;
 
+                        @media screen and(max-width:768px) {
+                            padding: 35px;
+                        }
+
                         .group-form {
                             label {
                                 font-size: 15px;
@@ -452,6 +457,11 @@ html {
                     padding-left: 60px;
                     padding-right: 80px;
 
+                    @media screen and(max-width:768px) {
+                        padding: 0;
+                        margin-top: 40px;
+                    }
+
                     .title {
                         h2 {
                             font-size: 28px;
@@ -494,6 +504,15 @@ html {
 .footer {
     background: white;
     padding: 110px 0;
+
+    @media screen and(max-width:567px) {
+        text-align: center;
+
+        .footer-logo {
+            margin: 0 auto;
+
+        }
+    }
 }
 
 .footer__container__content__row {
@@ -525,11 +544,10 @@ html {
                 display: block;
                 margin-bottom: 35px;
                 color: #151515;
-                padding-left: 25px;
             }
 
             ul {
-                padding-right: 50px;
+                padding: 0;
 
                 li {
                     display: block;

@@ -1271,9 +1271,19 @@ body {
 .footer {
     background: white;
     padding: 110px 0;
+
+    @media screen and(max-width:567px) {
+        text-align: center;
+
+        .footer-logo {
+            margin: 0 auto;
+
+        }
+    }
 }
 
 .footer__container__content__row {
+
     .footer-col1 {
         .footer-about {
             .footer-logo {
@@ -1296,6 +1306,7 @@ body {
 
     .footer-col2 {
         .content {
+
             h3 {
                 font-size: 17px;
                 font-weight: 600;
@@ -1305,6 +1316,7 @@ body {
             }
 
             ul {
+                padding: 0;
 
                 li {
                     display: block;
