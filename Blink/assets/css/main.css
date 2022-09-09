@@ -17,6 +17,7 @@ body {
 
 .headerActive {
   background-color: #fff !important;
+  position: fixed !important;
 }
 .headerActive #sign-up {
   background-color: #3080e3;
@@ -32,10 +33,8 @@ body {
   align-items: center;
   background-color: transparent;
   color: transparent;
-  z-index: 2;
-  position: static;
-  position: -webkit-sticky;
-  position: sticky;
+  z-index: 9;
+  position: absolute;
   top: 0;
   transition: 0.5s;
   width: 100%;
@@ -200,16 +199,15 @@ body {
   gap: 0px !important;
 }
 .header__container__row__burger__hamburger .icon__divs .icon1Active {
-  transform: rotate(40deg);
+  transform: rotate(45deg);
   position: absolute !important;
-  bottom: 17px;
 }
 .header__container__row__burger__hamburger .icon__divs .icon2Active {
   opacity: 0;
   visibility: 0;
 }
 .header__container__row__burger__hamburger .icon__divs .icon3Active {
-  transform: rotate(130deg);
+  transform: rotate(135deg);
   position: absolute;
 }
 .header__container__row__burger__hamburger i {
@@ -430,16 +428,20 @@ body {
 }
 
 .main__analysis {
-  padding: 100px;
+  padding: 110px 0;
 }
 
 .main__analysis__container__row .system-img img {
   width: 100%;
 }
 .main__analysis__container__row #manage {
-  padding-left: 100px;
   display: flex !important;
   align-items: center !important;
+}
+@media screen and (max-width: 768px) {
+  .main__analysis__container__row #manage .content {
+    margin-top: 50px;
+  }
 }
 .main__analysis__container__row #manage .content .solution h4 {
   color: #3080e3;
@@ -488,12 +490,23 @@ body {
   font-size: 15px;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1400px) {
+  .main__analysis__container__row #manage .content {
+    padding-left: 50px;
+  }
+}
 
 .main__about {
   padding: 110px 0;
   position: relative;
   background-color: #151515;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .main__about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .main__about .shape-img1 {
   position: absolute;
@@ -520,6 +533,11 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 768px) {
+  .main__about__container__row .inf-col .content {
+    margin-bottom: 50px;
+  }
+}
 .main__about__container__row .inf-col .content h4 {
   color: #3080e3;
   font-size: 15px;
@@ -585,7 +603,7 @@ body {
   background-color: #f4f7fa;
   display: block;
   align-items: center;
-  padding: 110px;
+  padding: 110px 0px;
 }
 
 .main__pricing__container .pricing-title {
@@ -709,7 +727,7 @@ body {
 }
 
 .main__ratings {
-  padding: 110px 200px 110px 200px;
+  padding: 110px 0px;
   position: relative;
 }
 
@@ -736,6 +754,7 @@ body {
   position: relative;
   font-weight: 700;
   text-align: center;
+  font-family: poppins, sans-serif;
 }
 .main__ratings__container .ratings-title p {
   line-height: 26px;
@@ -747,6 +766,11 @@ body {
 .main__ratings__container__row .satisfaction .statics {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .main__ratings__container__row .satisfaction .statics {
+    padding: 20px 0;
+  }
 }
 .main__ratings__container__row .satisfaction .statics .counter {
   font-size: 32px;
@@ -820,7 +844,8 @@ body {
 .main__testimonials__container .owl-carousel .owl-dots {
   position: absolute;
   bottom: -90px;
-  left: 42%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 10px;
 }
@@ -1034,10 +1059,6 @@ body {
   display: block;
   margin-bottom: 35px;
   color: #151515;
-  padding-left: 25px;
-}
-.footer__container__content__row .footer-col2 .content ul {
-  padding-right: 50px;
 }
 .footer__container__content__row .footer-col2 .content ul li {
   display: block;
@@ -1152,8 +1173,6 @@ body {
     display: flex;
     justify-content: end;
   }
-}
-@media screen and (max-width: 576px) {
   .header .burger {
     width: 50%;
   }

@@ -184,16 +184,16 @@ html {
   gap: 0px !important;
 }
 .header__container__row__burger__hamburger .icon__divs .icon1Active {
-  transform: rotate(135deg);
+  transform: rotate(45deg);
   position: absolute !important;
-  bottom: 41px;
 }
 .header__container__row__burger__hamburger .icon__divs .icon2Active {
   opacity: 0;
   visibility: 0;
 }
 .header__container__row__burger__hamburger .icon__divs .icon3Active {
-  transform: rotate(225deg);
+  transform: rotate(135deg);
+  position: absolute;
 }
 .header__container__row__burger__hamburger i {
   font-size: 30px !important;
@@ -484,8 +484,6 @@ html {
     display: flex;
     justify-content: end;
   }
-}
-@media screen and (max-width: 576px) {
   .header .burger {
     width: 50%;
   }

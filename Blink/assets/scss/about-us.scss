@@ -23,7 +23,7 @@ body {
     top: 0;
 
 
-    
+
     &__container {
         position: relative;
 
@@ -51,43 +51,48 @@ body {
                 padding: 0;
 
                 .list {
-                 padding: 12px 16px;
-                  span{
-                    color: #151515;
-                  }
-                    .double-ul{ 
-                         
+                    padding: 12px 16px;
+
+                    span {
+                        color: #151515;
+                    }
+
+                    .double-ul {
+
                         margin-top: 10px;
                         display: none;
-                            transform: translateX(-10px);
-                        li { 
+                        transform: translateX(-10px);
+
+                        li {
                             transform: translateX(-10px);
                             padding-top: 15px;
-                              
-                            a{
+
+                            a {
                                 color: #727272;
-                            
-                            font-size: 12px; 
+
+                                font-size: 12px;
                             }
                         }
                     }
 
-                   .iconList{ 
-                    display: flex;
-                    justify-content: space-between;
-                    color: #727272;
-                    i {
+                    .iconList {
+                        display: flex;
+                        justify-content: space-between;
                         color: #727272;
-                       transition: 0.4s;
-                       display:flex;
-                       justify-content: flex-end;
 
-                       
+                        i {
+                            color: #727272;
+                            transition: 0.4s;
+                            display: flex;
+                            justify-content: flex-end;
+
+
+                        }
+
+                        .iactive {
+                            transform: rotateZ(180deg);
+                        }
                     }
-                    .iactive{
-                        transform: rotateZ(180deg);
-                    }
-                   }
                 }
             }
         }
@@ -95,12 +100,12 @@ body {
         .hamburgeractive {
             height: auto;
             visibility: visible;
-        } 
+        }
 
-        .listactive{
+        .listactive {
             display: block !important;
-            
-            
+
+
         }
     }
 
@@ -240,9 +245,8 @@ body {
         }
 
         .icon1Active {
-            transform: rotate(135deg);
+            transform: rotate(45deg);
             position: absolute !important;
-            bottom: 41px;
         }
 
         .icon2Active {
@@ -251,7 +255,8 @@ body {
         }
 
         .icon3Active {
-            transform: rotate(225deg);
+            transform: rotate(135deg);
+            position: absolute;
         }
     }
 
@@ -708,21 +713,22 @@ body {
             }
 
             .owl-dots {
-                  
 
-            position: absolute;
-            bottom: -90px;
-            left: 42%;
-            display: flex;
-            gap: 10px;
-            
-            .owl-dot{
-                width: 20px;
-                height: 5px;
-              background-color: #d0cccc;
-              border-radius: 3px;  
-            
-            }
+
+                position: absolute;
+                bottom: -90px;
+                left: 42%;
+                display: flex;
+                gap: 10px;
+
+                .owl-dot {
+                    width: 20px;
+                    height: 5px;
+                    background-color: #d0cccc;
+                    border-radius: 3px;
+
+                }
+
                 .active {
                     width: 25px;
                     background-color: #3080e3;
@@ -1094,12 +1100,6 @@ body {
             display: flex;
             justify-content: end;
         }
-    }
-}
-
-
-@media screen and (max-width: 576px) {
-    .header {
         .burger {
             width: 50%;
         }
@@ -1109,3 +1109,5 @@ body {
         }
     }
 }
+
+

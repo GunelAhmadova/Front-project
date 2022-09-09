@@ -17,6 +17,7 @@ body {
 
 .headerActive {
     background-color: #fff !important;
+    position: fixed !important;
 
     #sign-up {
         background-color: #3080e3;
@@ -34,10 +35,8 @@ body {
     align-items: center;
     background-color: transparent;
     color: transparent;
-    z-index: 2;
-    position: static;
-    position: -webkit-sticky;
-    position: sticky;
+    z-index: 9;
+    position: absolute;
     top: 0;
     transition: 0.5s;
     width: 100%;
@@ -252,10 +251,10 @@ body {
         }
 
         .icon1Active {
-            transform: rotate(40deg);
+            transform: rotate(45deg);
             position: absolute !important;
-            bottom: 17px;
         }
+
 
         .icon2Active {
             opacity: 0;
@@ -263,10 +262,12 @@ body {
         }
 
         .icon3Active {
-            transform: rotate(130deg);
+            transform: rotate(135deg);
             position: absolute;
         }
     }
+
+
 
     i {
         font-size: 30px !important;
@@ -523,7 +524,7 @@ body {
 }
 
 .main__analysis {
-    padding: 100px;
+    padding: 110px 0;
 }
 
 .main__analysis__container__row {
@@ -534,11 +535,15 @@ body {
     }
 
     #manage {
-        padding-left: 100px;
         display: flex !important;
         align-items: center !important;
 
+
         .content {
+            @media screen and(max-width:768px) {
+                margin-top: 50px;
+            }
+
             .solution {
                 h4 {
                     color: #3080e3;
@@ -596,6 +601,11 @@ body {
                     }
                 }
             }
+
+            @media screen and(min-width:1400px) {
+                padding-left: 50px;
+            }
+
         }
     }
 }
@@ -605,6 +615,11 @@ body {
     position: relative;
     background-color: #151515;
     overflow: hidden;
+
+    @media (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     .shape-img1 {
         position: absolute;
@@ -640,6 +655,10 @@ body {
 .main__about__container__row {
     .inf-col {
         .content {
+            @media screen and(max-width:768px) {
+                margin-bottom: 50px;
+            }
+
             h4 {
                 color: #3080e3;
                 font-size: 15px;
@@ -720,7 +739,7 @@ body {
     background-color: #f4f7fa;
     display: block;
     align-items: center;
-    padding: 110px;
+    padding: 110px 0px;
 }
 
 .main__pricing__container {
@@ -871,7 +890,7 @@ body {
 }
 
 .main__ratings {
-    padding: 110px 200px 110px 200px;
+    padding: 110px 0px;
     position: relative;
 }
 
@@ -901,6 +920,7 @@ body {
             position: relative;
             font-weight: 700;
             text-align: center;
+            font-family: poppins, sans-serif;
         }
 
         p {
@@ -917,6 +937,10 @@ body {
         .statics {
             display: flex;
             justify-content: center;
+
+            @media screen and(max-width:768px) {
+                padding: 20px 0;
+            }
 
             .counter {
                 font-size: 32px;
@@ -1003,7 +1027,8 @@ body {
 
             position: absolute;
             bottom: -90px;
-            left: 42%;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             gap: 10px;
 
@@ -1277,11 +1302,9 @@ body {
                 display: block;
                 margin-bottom: 35px;
                 color: #151515;
-                padding-left: 25px;
             }
 
             ul {
-                padding-right: 50px;
 
                 li {
                     display: block;
@@ -1427,11 +1450,7 @@ body {
             display: flex;
             justify-content: end;
         }
-    }
-}
 
-@media screen and (max-width: 576px) {
-    .header {
         .burger {
             width: 50%;
         }
