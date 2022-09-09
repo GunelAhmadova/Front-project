@@ -77,6 +77,8 @@
                         </ul>
                     </div>
                 </div>
+
+                
                 <div class="burger header__container__row__burger col-md-4 col-sm-6">
                     <div class=" hamburger header__container__row__burger__hamburger">
                         <div class="icon__divs" data-bs-toggle="dropdown">
@@ -85,15 +87,7 @@
                             <div class="icon3 single__icon"></div>
                         </div>
 
-                        <div class="dropdown">
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">Pages</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                                <li><a class="dropdown-item" href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 btns header__container__row__btns">
@@ -103,6 +97,49 @@
                     </div>
                 </div>
             </div>
+            <div class="hamburgerdrop">
+                <ul class="hamburgerdrop__list">
+                    <li class="list">
+                       <div class="iconList"><span>Home</span><i class="fa-solid fa-chevron-down"></i></div>
+
+                        <ul class="double-ul">
+                            <li> <a href="">Saas homepage</a></li> 
+                            <li> <a href="">Startup  homepage</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="list">
+                    <div class="iconList">
+                        <span>Pages</span><i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+                        <ul class="double-ul">
+                            <li> <a href="">About Us</a> </li>
+                            <li> <a href="">Our Pricing</a> </li>
+                            <li> <a href="">Our Services</a> </li>
+                            <li> <a href="">Sign-in</a> </li>
+                            <li> <a href="">Sign-up</a> </li>
+                            <li> <a href="">Reset Password</a> </li>
+                            <li> <a href="">Mail Succses</a> </li>
+                            <li> <a href="">404 Error</a> </li>
+
+                        </ul>
+                    </li>
+                    <li class="list"><span>Services</span></li>
+                    <li class="list"> 
+                        <div class="iconList">
+                             <span>Blog</span> <i class="fa-solid fa-chevron-down"></i>
+                       </div>
+
+                        <ul class="double-ul" data-aos="fade-down" data-aos-duration="1200">
+                            <li> <a href="">Blog Gird</a> </li>
+                        <li> <a href="">Blog Single </a> </li>
+                    </ul>
+
+                    </li>
+                    <li class="list"><span>Contact</span></li>
+                </ul>
+            </div> 
         </div>
     </header>
     <main class="main">
@@ -628,8 +665,33 @@
 
     </footer>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+<button class="scroll-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/owl.carousel2/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
